@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="dem.project:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/dem_project_jar</output-path>
+    <root id="archive" name="dem.project.jar">
+      <element id="module-output" name="dem.project.main" />
+    </root>
+  </artifact>
+</component>
