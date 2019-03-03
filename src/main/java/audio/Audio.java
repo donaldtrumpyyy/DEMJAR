@@ -15,7 +15,9 @@ public class Audio {
 			clip = AudioSystem.getClip();
 			clip.open(audio);
 			clip.start();
-		} catch (Exception e) {}
+		} catch (Exception e) {
+
+		}
 	}
 						
 	public static Clip getClip() {
@@ -25,7 +27,7 @@ public class Audio {
 	@SuppressWarnings("static-access")
 	public static void playSound(String son) {
 		try {
-			Audio s = new Audio(son);
+			Audio s = new Audio("/" + son);
 			s.clip.start();
 		} catch(Exception e) {
 			System.out.println(son + " est un audio corrompu.");

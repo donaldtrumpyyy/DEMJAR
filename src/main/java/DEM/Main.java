@@ -8,6 +8,8 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -20,6 +22,8 @@ import java.net.URISyntaxException;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Main {
 
@@ -77,7 +81,7 @@ public class Main {
             menuBar.setVisible(true);
 
             labelProject = new JLabel();
-            labelProject.setBounds(200, 100, 450, 40);
+            labelProject.setBounds(150, 100, 450, 40);
             labelProject.setVisible(true);
 
             JButton help = new JButton("Aide");
