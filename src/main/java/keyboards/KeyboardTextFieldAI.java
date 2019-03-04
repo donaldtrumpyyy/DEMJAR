@@ -1,5 +1,6 @@
 package keyboards;
 
+import DEM.JME;
 import DEM.Main;
 import audio.Audio;
 import enums.Errors;
@@ -368,6 +369,8 @@ public class KeyboardTextFieldAI implements KeyListener {
 				frame.setVisible(true);
 
 				button.setVisible(false);
+			}else if(args.toLowerCase().contains("3d")) {
+				new JME();
 			}else{
 				Errors.errorQuestion.getError();
 				button.setVisible(false);
