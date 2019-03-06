@@ -224,95 +224,100 @@ public class KeyboardTextFieldAI implements KeyListener {
 
 				JLabel test = new JLabel();
 
-				text.setBounds(150, 80, 200, 40);
+				text.setBounds(150, 70, 200, 40);
 				text.setEditable(false);
 				text.setVisible(true);
 
 				JButton un = new JButton("1");
 				addAction(un, "1");
-				un.setBounds(145, 150, 50, 50);
+				un.setBounds(145, 140, 60, 60);
 				un.setVisible(true);
 
 				JButton deux = new JButton("2");
 				addAction(deux, "2");
-				deux.setBounds(225, 150, 50, 50);
+				deux.setBounds(225, 140, 60, 60);
 				deux.setVisible(true);
 
 				JButton trois = new JButton("3");
 				addAction(trois, "3");
-				trois.setBounds(305, 150, 50, 50);
+				trois.setBounds(305, 140, 60, 60);
 				trois.setVisible(true);
 
 				JButton quatre = new JButton("4");
 				addAction(quatre, "4");
-				quatre.setBounds(145, 220, 50, 50);
+				quatre.setBounds(145, 210, 60, 60);
 				quatre.setVisible(true);
 
 				JButton cinq = new JButton("5");
 				addAction(cinq, "5");
-				cinq.setBounds(225, 220, 50, 50);
+				cinq.setBounds(225, 210, 60, 60);
 				cinq.setVisible(true);
 
 				JButton six = new JButton("6");
 				addAction(six, "6");
-				six.setBounds(305, 220, 50, 50);
+				six.setBounds(305, 210, 60, 60);
 				six.setVisible(true);
 
 				JButton sept = new JButton("7");
 				addAction(sept, "7");
-				sept.setBounds(145, 290, 50, 50);
+				sept.setBounds(145, 280, 60, 60);
 				sept.setVisible(true);
 
 				JButton huit = new JButton("8");
 				addAction(huit, "8");
-				huit.setBounds(225, 290, 50, 50);
+				huit.setBounds(225, 280, 60, 60);
 				huit.setVisible(true);
 
 				JButton neuf = new JButton("9");
 				addAction(neuf, "9");
-				neuf.setBounds(305, 290, 50, 50);
+				neuf.setBounds(305, 280, 60, 60);
 				neuf.setVisible(true);
 
 				JButton zéro = new JButton("0");
 				addAction(zéro, "0");
-				zéro.setBounds(225, 360, 50, 50);
+				zéro.setBounds(225, 350, 60, 60);
 				zéro.setVisible(true);
 
 
 				JButton plus = new JButton("+");
 				addAction(plus, "+");
-				plus.setBounds(20, 430, 40, 40);
+				plus.setBounds(20, 420, 50, 50);
 				plus.setVisible(true);
 
 				JButton moins = new JButton("-");
 				addAction(moins, "-");
-				moins.setBounds(90, 430, 40, 40);
+				moins.setBounds(90, 420, 50, 50);
 				moins.setVisible(true);
 
 				JButton multiplier = new JButton("*");
 				addAction(multiplier, "*");
-				multiplier.setBounds(160, 430, 40, 40);
+				multiplier.setBounds(160, 420, 50, 50);
 				multiplier.setVisible(true);
 
 				JButton diviser = new JButton("/");
 				addAction(diviser, "/");
-				diviser.setBounds(230, 430, 40, 40);
+				diviser.setBounds(230, 420, 50, 50);
 				diviser.setVisible(true);
 
 				JButton virgule = new JButton(",");
 				addAction(virgule, ".");
-				virgule.setBounds(300, 430, 40, 40);
+				virgule.setBounds(300, 420, 50, 50);
 				virgule.setVisible(true);
 
 				JButton puissance = new JButton("^");
 				addAction(puissance, "^");
-				puissance.setBounds(370, 430, 40, 40);
+				puissance.setBounds(370, 420, 50, 50);
 				puissance.setVisible(true);
 
 				JButton pi = new JButton("π");
 				addAction(pi, "π");
-				pi.setBounds(440, 430, 40, 40);
+				pi.setBounds(440, 420, 50, 50);
 				pi.setVisible(true);
+
+				JButton cancel = new JButton("CA");
+				resetField(cancel);
+				cancel.setBounds(100, 72, 40, 40);
+				cancel.setVisible(true);
 
 				JButton end = new JButton("=");
 				end.addActionListener(new ActionListener() {
@@ -337,7 +342,7 @@ public class KeyboardTextFieldAI implements KeyListener {
 						}
 					}
 				});
-				end.setBounds(365, 82, 35, 35);
+				end.setBounds(365, 72, 40, 40);
 				end.setVisible(true);
 
 				frame.getContentPane().add(text);
@@ -359,6 +364,8 @@ public class KeyboardTextFieldAI implements KeyListener {
 				frame.getContentPane().add(virgule);
 				frame.getContentPane().add(puissance);
 				frame.getContentPane().add(pi);
+
+				frame.getContentPane().add(cancel);
 				frame.getContentPane().add(end);
 
 				frame.getContentPane().add(test);
@@ -382,7 +389,7 @@ public class KeyboardTextFieldAI implements KeyListener {
 	public void keyReleased(KeyEvent e) {}
 
 	@SuppressWarnings("static-access")
-	public static void setSearch(String url) {
+	private void setSearch(String url) {
 		Desktop d = Desktop.getDesktop();
 		
 		try {
@@ -400,8 +407,17 @@ public class KeyboardTextFieldAI implements KeyListener {
 		button.setVisible(false);
 		Main.search.setText("");
 	}
-	
-	public void addAction(JButton button, String action) {
+
+	private void resetField(JButton button) {
+		button.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				text.setText("");
+			}
+		});
+	}
+
+	private void addAction(JButton button, String action) {
 		button.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -415,7 +431,7 @@ public class KeyboardTextFieldAI implements KeyListener {
 		});
 	}
 
-	public void setRandom() {
+	private void setRandom() {
 		String[] characters = {
 				"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 				"m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
@@ -449,15 +465,15 @@ public class KeyboardTextFieldAI implements KeyListener {
 		Main.search.setText("Et voila : " + total);
 	}
 
-	public void setConvert(double math, String convert) {
+	private void setConvert(double math, String convert) {
 		double floor = Math.floor(math);
 
 		Main.search.setText("");
 		button.setVisible(false);
 		Main.labelProject.setText("Et voilà : " + floor + " " + convert);
 	}
-	
-	public static void setRandom(String[] board) {
+
+	private void setRandom(String[] board) {
 		Random random = new Random();
 		String result = board[random.nextInt(board.length)];
 
