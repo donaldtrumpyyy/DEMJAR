@@ -11,8 +11,9 @@ import javax.script.ScriptException;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import javax.swing.text.html.HTMLEditorKit;
 import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -31,121 +32,51 @@ public class KeyboardTextFieldAI implements KeyListener {
 	public static String prefix = ".";
 	
 	private JTextField text = new JTextField();
-	private static JButton button = new JButton("Recommencer");
+	private JButton button = new JButton("Retry");
 
 	@Override
 	public void keyPressed(KeyEvent e) {
 		if(e.getKeyCode() == KeyEvent.VK_ENTER) {
 
-			String[] answers = {"Bonjour !"};
-			String[] answers1 = {"Très bien et vous ?", "Bien et vous ?"};
-			String[] answers2 = {"Je fais de l'accordéon !", "Quelque chose...", "Peut-être pareil que vous !", "Je vous aide.", "Je suis en train de vous aider."};
-			String[] answers3 = {"Je suis un robot qui est ici pour vous aider.", "Quelqu'un...", "Une personne imaginaire pour vous aider."};
-			String[] answers4 = {"Pardon ?", "Pourquoi ?", "Ah bon ?", "Vous êtes sûr ?"};
-			String[] answers5 = {"Vous pouvez me tutoyer."};
-			String[] answers6 = {"Moi aussi.", "Merci !", "Ça fait plaisir !"};
-			String[] answers7 = {"42.", "Je dirai au Nord.", "Par ici ? Ou par là ?"};
-			String[] answers8 = {"Peur de quoi ?", "Pourquoi ?", "Pourquoi avoir peur ?"};
-			String[] answers9 = {"Parce que.", "Le pourquoi du comment ?", "Je ne sais."};
-			String[] answers10 = {"Désolé, mais ceci n'est pas accessible.", "Je ne peux pas vour fournir cela.", "Vous n'avez pas l'autorisation pour avoir ceci."};
-			String[] answers12 = {"Aurevoir !", "À la prochaine !", "Bonne journée !"};
-			String[] answers13 = {"Je sais vous aider.", "Je sais faire des chose."};
+			String[] answers = {"Hello !"};
+			String[] answers1 = {"Very good and you ?", "I'm fine and you ?"};
+			String[] answers2 = {"I play accordion !", "Something...", "Maybe the same as you !", "I help you", "I'm trying to help you"};
+			String[] answers3 = {"I am a robot who is here to help you", "Someone...", "A robot to help you"};
+			String[] answers4 = {"Sorry ?", "Why ?", "Are you sure ?"};
+			String[] answers5 = {"You can talk to me"};
+			String[] answers6 = {"Me too", "Thank you !", "It's a pleasure !"};
+			String[] answers7 = {"42.", "I will say to the North", "This way ? Or there ?"};
+			String[] answers8 = {"Afraid of what ?", "Why ?", "Why be afraid ?"};
+			String[] answers9 = {"Because.", "Why and how ?", "I don't know"};
+			String[] answers10 = {"I'm sorry, but this is not accessible", "I can not give you that", "You don't have permission for this !"};
+			String[] answers12 = {"Goodbye !", "See you !", "Have a good day !"};
+			String[] answers13 = {"I know how to help you", "I know how to do things"};
 
 			String args = Main.search.getText();
 
-
-			/*
-			if(args.toLowerCase().contains("test")) {
-				JFrame frame = new JFrame("testFrame");
-
-				JLabel label = new JLabel("valeur : ", JLabel.CENTER);
-
-				JSlider slider = new JSlider();
-
-				slider.addChangeListener(new ChangeListener() {
-					@Override
-					public void stateChanged(ChangeEvent e) {
-						label.setText("valeur : " + slider.getValue() + " °F");
-					}
-				});
-
-				slider.setMaximum(100);
-				slider.setMinimum(0);
-				slider.setValue(30);
-
-				JButton button = new JButton("test OK");
-				button.addActionListener(new ActionListener() {
-					@Override
-					public void actionPerformed(ActionEvent e) {
-						double floor = Math.floor((slider.getValue() - 32) / 1.8);
-
-						label.setText("résultat : " + floor + " °C");
-					}
-				});
-				button.setVisible(true);
-
-				JPanel panel = new JPanel();
-				panel.add(new JLabel("test OK"));
-
-				JPanel panel1 = new JPanel();
-				panel1.add(slider);
-				panel1.add(button);
-				panel1.add(label);
-
-
-				JSplitPane split = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel, panel1);
-
-				frame.getContentPane().add(split);
-
-				frame.setResizable(false);
-				frame.setSize(500, 500);
-				frame.setLocationRelativeTo(null);
-				frame.setVisible(true);
-			}else if(args.toLowerCase().contains("abc")) {
-				JFrame frame = new JFrame("testFrame");
-
-				JTabbedPane tabbedPane = new JTabbedPane();
-
-				JPanel test = new JPanel();
-				test.add(new JLabel("onglet 1"));
-				tabbedPane.add("panel", test);
-
-				JPanel test1 = new JPanel();
-				test1.add(new JLabel("onglet 2"));
-				tabbedPane.add("panel1", test1);
-
-				frame.getContentPane().add(tabbedPane);
-
-				frame.setResizable(false);
-				frame.setSize(500, 500);
-				frame.setLocationRelativeTo(null);
-				frame.setVisible(true);
-			}
-			*/
-
-			if(args.toLowerCase().contains("bonjour") || args.toLowerCase().contains("salut") || args.toLowerCase().contains("hej") || args.toLowerCase().contains("hallo") || args.toLowerCase().contains("wesh") || args.toLowerCase().contains("wsh")) {
+			if(args.toLowerCase().contains("hey") || args.toLowerCase().contains("hi") || args.toLowerCase().contains("hej") || args.toLowerCase().contains("hallo") || args.toLowerCase().contains("hello")) {
 				setRandom(answers);
-			}else if(args.toLowerCase().contains("ça va") || args.toLowerCase().contains("sa va") || args.toLowerCase().contains("comment vas-tu")) {
+			}else if(args.toLowerCase().contains("how r u") || args.toLowerCase().contains("how are you")) {
 				setRandom(answers1);
-			}else if(args.toLowerCase().contains("que fais-tu") || args.toLowerCase().contains("tu fais quoi") || args.toLowerCase().contains("tu fais")|| args.toLowerCase().contains("tfk")) {
+			}else if(args.toLowerCase().contains("what are you doing") || args.toLowerCase().contains("what") && args.toLowerCase().contains("doing")) {
 				setRandom(answers2);
-			}else if(args.toLowerCase().contains("tu") && args.toLowerCase().contains("qui") || args.toLowerCase().contains("t'") && args.toLowerCase().contains("qui")) {
+			}else if(args.toLowerCase().contains("you") && args.toLowerCase().contains("who")) {
 				setRandom(answers3);
-			}else if(args.toLowerCase().contains("tu") && args.toLowerCase().contains("nul") || args.toLowerCase().contains("tu") && args.toLowerCase().contains("naze") || args.toLowerCase().contains("t'") && args.toLowerCase().contains("nul")) {
+			}else if(args.toLowerCase().contains("you") && args.toLowerCase().contains("bad") || args.toLowerCase().contains("you") && args.toLowerCase().contains("sucks")) {
 				setRandom(answers4);
-			}else if(args.toLowerCase().contains("vous") || args.toLowerCase().contains("vouvoyer")) {
+			}else if(args.toLowerCase().contains("you") || args.toLowerCase().contains("address as vous")) {
 				setRandom(answers5);
-			}else if(args.toLowerCase().contains("je") && args.toLowerCase().contains("t'") && args.toLowerCase().contains("aime") || args.toLowerCase().contains("je") && args.toLowerCase().contains("aime")) {
+			}else if(args.toLowerCase().contains("i") && args.toLowerCase().contains("you") && args.toLowerCase().contains("love") || args.toLowerCase().contains("i") && args.toLowerCase().contains("love")) {
 				setRandom(answers6);
-			}else if(args.toLowerCase().contains("sens") && args.toLowerCase().contains("vie")) {
+			}else if(args.toLowerCase().contains("meaning") && args.toLowerCase().contains("life")) {
 				setRandom(answers7);
-			}else if(args.toLowerCase().contains("je") && args.toLowerCase().contains("peur") || args.toLowerCase().contains("j'") && args.toLowerCase().contains("peur")) {
+			}else if(args.toLowerCase().contains("i") && args.toLowerCase().contains("afraid")) {
 				setRandom(answers8);
-			}else if(args.toLowerCase().contains("pourquoi")) {
+			}else if(args.toLowerCase().contains("why")) {
 				setRandom(answers9);
 			}else if(args.toLowerCase().contains("logs") || args.toLowerCase().contains("console")) {
 				setRandom(answers10);
-			}else if(args.toLowerCase().contains("aurevoir") || args.toLowerCase().contains("ciao") || args.toLowerCase().contains("bonne") && args.toLowerCase().contains("journée") || args.toLowerCase().contains("bonne") && args.toLowerCase().contains("soirée")) {
+			}else if(args.toLowerCase().contains("good bye") || args.toLowerCase().contains("ciao") || args.toLowerCase().contains("good") && args.toLowerCase().contains("bye") || args.toLowerCase().contains("good") && args.toLowerCase().contains("night")) {
 				setRandom(answers12);
 
 				Timer t = new Timer();
@@ -156,7 +87,7 @@ public class KeyboardTextFieldAI implements KeyListener {
 						Main.frame.setVisible(false);
 					}
 				}, 1000);
-			}else if(args.toLowerCase().contains("génère") && args.toLowerCase().contains("mot de passe") || args.toLowerCase().contains("génère") && args.toLowerCase().contains("mdp")) {
+			}else if(args.toLowerCase().contains("generate") && args.toLowerCase().contains("password") || args.toLowerCase().contains("generate") && args.toLowerCase().contains("pwd")) {
 				setRandom();
 
 				button.addActionListener(new ActionListener() {
@@ -189,11 +120,11 @@ public class KeyboardTextFieldAI implements KeyListener {
 					}
 				}else if(args.toLowerCase().contains("youtube")) {
 					setSearch("https://www.youtube.com/results?search_query=" + args.replace(prefix + "google", "").replace("youtube", "").replaceAll(" ", "%20"));
-				}else if(args.toLowerCase().contains("wikipedia")) {
-					setSearch("https://fr.wikipedia.org/wiki/Special:Search?search=" + args.replace(prefix + "google", "").replace("wikipedia", "").replaceAll(" ", "%20"));
 				}else{
 					setSearch("https://www.google.fr/#q=" + args.replace(prefix + "google", "").replaceAll(" ", "%20"));
 				}
+			}else if(args.toLowerCase().contains(prefix + "wikipedia")) {
+				setSearch("https://fr.wikipedia.org/wiki/Special:Search?search=" + args.replace(prefix + "wikipedia", "").replaceAll(" ", "%20"));
 			}else if(args.toLowerCase().contains(prefix + "free3d")) {
 				if(args.toLowerCase().contains("c4d")) {
 					setSearch("https://free3d.com/3d-models/cinema-4d-" + args.replace(prefix + "free3d", "").replace("c4d", "").replaceAll(" ", "%20"));
@@ -376,8 +307,18 @@ public class KeyboardTextFieldAI implements KeyListener {
 				frame.setVisible(true);
 
 				button.setVisible(false);
-			}else if(args.toLowerCase().contains("3d")) {
+			}else if(args.toLowerCase().contains(prefix + "solarsystem")) {
+				//JME jme = new JME();
+				//jme.start();
+
+				JOptionPane attention = new JOptionPane();
+				attention.showMessageDialog(null, "The solar system are in beta actually", "Attention", JOptionPane.INFORMATION_MESSAGE);
+
 				new JME();
+			}else if(args.toLowerCase().contains(prefix + "version")) {
+				Main.labelProject.setText("Version of DEM : " + Main.version);
+			}else if(args.toLowerCase().contains(prefix + "licence")) {
+				Main.labelProject.setText("MIT Licence for Donald_Trumpyyy");
 			}else{
 				Errors.errorQuestion.getError();
 				button.setVisible(false);
@@ -402,7 +343,7 @@ public class KeyboardTextFieldAI implements KeyListener {
 		
 		Audio.playSound("ok.wav");
 		JOptionPane success = new JOptionPane();
-		success.showMessageDialog(null, "Le site se lance sur votre navigateur par défaut", "Succès", JOptionPane.INFORMATION_MESSAGE);
+		success.showMessageDialog(null, "The site launches on your default browser", "Success", JOptionPane.INFORMATION_MESSAGE);
 
 		button.setVisible(false);
 		Main.search.setText("");
@@ -461,8 +402,17 @@ public class KeyboardTextFieldAI implements KeyListener {
 
 		String total = result + result1 + result2 + result3 + result4 + result5 + result6 + result7 + result8 + result9 + result10 + result11 + result12 + result13 + result14;
 
+        StringSelection stringSelection = new StringSelection(total);
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+
+        Audio.playSound("ok.wav");
+        JOptionPane copy = new JOptionPane();
+        copy.showMessageDialog(null, "Your password has just been copied to the clipboard", "Copied text", JOptionPane.INFORMATION_MESSAGE);
+
+        clipboard.setContents(stringSelection, null);
+
 		Main.search.setText("");
-		Main.search.setText("Et voila : " + total);
+		Main.search.setText("There you go : " + total);
 	}
 
 	private void setConvert(double math, String convert) {
@@ -470,7 +420,7 @@ public class KeyboardTextFieldAI implements KeyListener {
 
 		Main.search.setText("");
 		button.setVisible(false);
-		Main.labelProject.setText("Et voilà : " + floor + " " + convert);
+		Main.labelProject.setText("There you go : " + floor + " " + convert);
 	}
 
 	private void setRandom(String[] board) {
@@ -488,14 +438,14 @@ public class KeyboardTextFieldAI implements KeyListener {
 		JTabbedPane tabbedPane = new JTabbedPane();
 
 
-		JLabel label = new JLabel("Valeur : ", JLabel.CENTER);
+		JLabel label = new JLabel("Value : ", JLabel.CENTER);
 
 		JSlider slider = new JSlider();
 
 		slider.addChangeListener(new ChangeListener() {
 			@Override
 			public void stateChanged(ChangeEvent e) {
-				label.setText("Valeur : " + slider.getValue() + " °F");
+				label.setText("Value : " + slider.getValue() + " °F");
 			}
 		});
 		slider.setBounds(200, 150, 150, 25);
@@ -503,27 +453,27 @@ public class KeyboardTextFieldAI implements KeyListener {
 		slider.setMinimum(0);
 		slider.setValue(30);
 
-		JButton button = new JButton("Calculer");
+		JButton button = new JButton("Calculate");
 		button.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				double floor = Math.floor((slider.getValue() - 32) / 1.8);
 
-				label.setText("Résultat : " + floor + " °F");
+				label.setText("Result : " + floor + " °F");
 			}
 		});
 		button.setVisible(true);
 
 
 
-		JLabel label1 = new JLabel("Valeur : ", JLabel.CENTER);
+		JLabel label1 = new JLabel("Value : ", JLabel.CENTER);
 
 		JSlider slider1 = new JSlider();
 
 		slider1.addChangeListener(new ChangeListener() {
 			@Override
 			public void stateChanged(ChangeEvent e) {
-				label1.setText("Valeur : " + slider1.getValue() + " °C");
+				label1.setText("Value : " + slider1.getValue() + " °C");
 			}
 		});
 		slider1.setBounds(200, 150, 150, 25);
@@ -531,13 +481,13 @@ public class KeyboardTextFieldAI implements KeyListener {
 		slider1.setMinimum(0);
 		slider1.setValue(20);
 
-		JButton button1 = new JButton("Calculer");
+		JButton button1 = new JButton("Calculate");
 		button1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				double floor = Math.floor((slider1.getValue() * 9 / 5) + 32);
 
-				label1.setText("Résultat : " + floor + " °F");
+				label1.setText("Result : " + floor + " °F");
 			}
 		});
 		button1.setBounds(200, 180, 100, 50);
@@ -555,12 +505,11 @@ public class KeyboardTextFieldAI implements KeyListener {
 		panel1.add(button);
 		panel1.add(label);
 
-		tabbedPane.add("Celsius en Farenheit", panel);
-		tabbedPane.add("Farenheit en Celsius", panel1);
+		tabbedPane.add("Celsius to Farenheit", panel);
+		tabbedPane.add("Farenheit to Celsius", panel1);
 
 		frame.getContentPane().add(tabbedPane);
 
-		frame.pack();
 		frame.setResizable(false);
 		frame.setSize(500, 500);
 		frame.setLocationRelativeTo(null);

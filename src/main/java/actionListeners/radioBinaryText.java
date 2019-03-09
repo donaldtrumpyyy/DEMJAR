@@ -11,10 +11,10 @@ public class radioBinaryText implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if(Main.radioBinary.isSelected()) {
 			Main.radioText.setSelected(false);
-			Main.resultLabel.setText("Vous avez choisi la traduction de binaire en texte.");
+			Main.resultLabel.setText("You have chosen the translation of binary into text");
 			Main.textBinary.setEditable(false);
 		}else if(!(Main.radioBinary.isSelected() && Main.radioText.isSelected())) {
-			Main.resultLabel.setText("Choisissez un mode de traduction.");
+			Main.resultLabel.setText("Choose a translation mode");
 		}
 	}
 

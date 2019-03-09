@@ -6,11 +6,11 @@ import javax.swing.*;
 
 public enum Errors {
 	
-	errorIP("Votre connection n'est pas assez puissante pour se connecter"),
-	errorTraduct("Choisissez un mode de traduction"),
-	errorMorse("Ce mode de traduction n'est pas encore disponible"),
-	errorQuestion("Vous devez mettre votre question"),
-	errorFloor("Vous venez de faire un mauvais calcul");
+	errorIP("Your connection is not strong enough to connect"),
+	errorTraduct("Choose a translation mode"),
+	errorMorse("This translation mode is not yet available"),
+	errorQuestion("You must put your command"),
+	errorFloor("You have just miscalculated");
 	
 	private String text;
 	
@@ -22,7 +22,7 @@ public enum Errors {
 	public String getError() {
 		Audio.playSound("failure.wav");
 		JOptionPane error = new JOptionPane();
-		error.showMessageDialog(null, text, "Erreur", JOptionPane.ERROR_MESSAGE);
+		error.showMessageDialog(null, text, "Error", JOptionPane.ERROR_MESSAGE);
 		return text;
 	}
 

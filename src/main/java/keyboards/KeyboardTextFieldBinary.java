@@ -18,12 +18,12 @@ public class KeyboardTextFieldBinary implements KeyListener {
 				Main.radioText.setSelected(false);
 				Main.textBinary.setText(binaryToText(Main.textBinary.getText()));
 				
-				Main.resultLabel.setText("Votre traduction s'est bien effectuée.");
+				Main.resultLabel.setText("Your translation was well done");
 			}else if(Main.radioText.isSelected()) {
 				Main.radioBinary.setSelected(false);
 				Main.textBinary.setText(textToBinary(Main.textBinary.getText()));
 				
-				Main.resultLabel.setText("Votre traduction s'est bien effectuée.");
+				Main.resultLabel.setText("Your translation was well done");
 			}else{
 				Main.resultLabel.setText(Errors.errorTraduct.getError());
 			}

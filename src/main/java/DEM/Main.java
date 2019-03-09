@@ -2,6 +2,7 @@ package DEM;
 
 import actionListeners.*;
 import enums.Errors;
+import javaConsoleAPI.Frame;
 import keyboards.*;
 
 import javax.script.ScriptEngine;
@@ -20,16 +21,17 @@ import java.net.InetAddress;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.UnknownHostException;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List;
 import java.util.Timer;
-import java.util.TimerTask;
 
 public class Main {
 
     public static JLabel labelProject = new JLabel("");
     public static JTextField search = new JTextField();
     public static JFrame frame = new JFrame();
+
+    public static String version = "BETA 1.2";
 
     public static void main(String[] args) {
         openMenu();
@@ -42,14 +44,14 @@ public class Main {
 
             JMenuBar menuBar = new JMenuBar();
 
-            JMenu menu = new JMenu("Menu");
+            JMenu menu = new JMenu("Home");
 
             JMenuItem menuItem = new JMenuItem("IP");
             menuItem.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     try {
-                        javaConsoleAPI.Frame.setFrame(new JFrame(), "IP", 350, 100, 0, new JLabel(), "" + InetAddress.getLocalHost(), false, null);
+                        Frame.setFrame(new JFrame(), "IP", 350, 100, 0, new JLabel(), "" + InetAddress.getLocalHost(), false, null);
                     } catch (UnknownHostException e1) {
                         Errors.errorIP.getError();
                         e1.printStackTrace();
@@ -62,14 +64,14 @@ public class Main {
 
             JMenu menu1 = new JMenu("Services");
 
-            JMenuItem itemBinary = new JMenuItem("Traducteur binaire");
-            setItemBinary(itemBinary, new JFrame(), "Traducteur binaire", "Cliquez sur le bouton pour accéder au traducteur");
+            JMenuItem itemBinary = new JMenuItem("Binary translator");
+            setItemBinary(itemBinary, new JFrame(), "Binary translator", "Click on the button to access the translator");
 
-            JMenuItem itemMorse = new JMenuItem("Traducteur morse");
-            setItemMorse(itemMorse, new JFrame(), "Traducteur morse", "Cliquez sur le bouton pour accéder au traducteur");
+            JMenuItem itemMorse = new JMenuItem("Morse translator");
+            setItemMorse(itemMorse, new JFrame(), "Morse translator", "Click on the button to access the translator");
 
-            JMenuItem itemMoyenne = new JMenuItem("Calculateur de moyenne");
-            setItemMoyenne(itemMoyenne, new JFrame(), "Calculateur de moyenne", "Cliquez sur le bouton pour accéder au calculateur");
+            JMenuItem itemMoyenne = new JMenuItem("Average calculator");
+            setItemMoyenne(itemMoyenne, new JFrame(), "Average calculator", "Click on the button to access the calculator");
 
             menu1.add(itemBinary);
             menu1.add(itemMorse);
@@ -84,7 +86,7 @@ public class Main {
             labelProject.setBounds(150, 100, 450, 40);
             labelProject.setVisible(true);
 
-            JButton help = new JButton("Aide");
+            JButton help = new JButton("Help");
             help.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -92,7 +94,7 @@ public class Main {
 
                     JLabel test = new JLabel();
 
-                    JLabel label = new JLabel("Les commandes disponibles : ");
+                    JLabel label = new JLabel("Available orders : ");
                     label.setBounds(100, 100, 200, 25);
                     label.setVisible(true);
 
@@ -112,7 +114,7 @@ public class Main {
                     commandFloor.setBounds(180, 240, 300, 25);
                     commandFloor.setVisible(true);
 
-                    JButton more = new JButton("Plus d'informations");
+                    JButton more = new JButton("More informations");
                     more.addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
@@ -148,7 +150,7 @@ public class Main {
             help.setBounds(195, 270, 100, 40);
             help.setVisible(true);
 
-            search = new JTextField("Mettez votre question");
+            search = new JTextField("Enter your command");
 
             search.setEditable(true);
             search.setBounds(50, 150, 400, 30);
@@ -199,9 +201,9 @@ public class Main {
         item.setEnabled(true);
     }
 
-    public static JRadioButton radioTextMorse = new JRadioButton("Texte -> Morse");
-    public static JRadioButton radioMorseText = new JRadioButton("Morse -> Texte");
-    public static JLabel labelMorse = new JLabel("Vous êtes sur la traduction de texte en morse");
+    public static JRadioButton radioTextMorse = new JRadioButton("Text -> Morse");
+    public static JRadioButton radioMorseText = new JRadioButton("Morse -> Text");
+    public static JLabel labelMorse = new JLabel("You are on the translation of text into Morse");
     public static JTextField textMorse = new JTextField();
 
     public static void setMorse() {
@@ -237,9 +239,9 @@ public class Main {
         frame.setVisible(true);
     }
 
-    public static JTextField textBinary = new JTextField("Entrez votre texte à décoder");
-    public static JRadioButton radioBinary = new JRadioButton("Binaire -> Text");
-    public static JRadioButton radioText = new JRadioButton("Texte -> Binaire");
+    public static JTextField textBinary = new JTextField("Enter your text to decode");
+    public static JRadioButton radioBinary = new JRadioButton("Binary -> Text");
+    public static JRadioButton radioText = new JRadioButton("Text -> Binary");
     public static JLabel resultLabel = new JLabel();
 
     public static void setBinary() {
@@ -278,10 +280,13 @@ public class Main {
 
         JLabel test = new JLabel();
 
+        JLabel label1 = new JLabel("Enter <end> to calculate the total");
+        label1.setBounds(130, 150, 300, 25);
+
         JLabel label = new JLabel("");
         label.setBounds(200, 250, 150, 25);
 
-        JTextField field = new JTextField("Entrez vos notes ici");
+        JTextField field = new JTextField("Enter your notes here");
 
         field.addKeyListener(new KeyListener() {
             @Override
@@ -293,8 +298,6 @@ public class Main {
             public void keyPressed(KeyEvent e) {
                 if(e.getKeyCode() == KeyEvent.VK_ENTER) {
                     if(field.getText().toLowerCase().contains("end")) {
-                        //double result = Math.floor(Integer.parseInt(list.toString().replace("[", "").replace("]", "").replace(" ", "").replace(",", "+")) / list.size());
-
                         ScriptEngineManager mgr = new ScriptEngineManager();
                         ScriptEngine engine = mgr.getEngineByName("Nashorn");
                         String toFloor = list.toString().replace("[", "(").replace("]", ")").replace(" ", "").replace(",", "+");
@@ -306,7 +309,7 @@ public class Main {
                             list.clear();
                             System.out.println(list);
 
-                            label.setText("Et voilà : " + result);
+                            label.setText("There you go : " + result);
                         } catch (ScriptException e1) {
                             e1.printStackTrace();
                         }
@@ -328,6 +331,7 @@ public class Main {
 
         frame.getContentPane().add(field);
         frame.getContentPane().add(label);
+        frame.getContentPane().add(label1);
 
         frame.getContentPane().add(test);
 
@@ -339,7 +343,7 @@ public class Main {
 
     public static void setHome(JFrame frame) {
         JMenuBar menuBar = new JMenuBar();
-        JMenu menu = new JMenu("Menu");
+        JMenu menu = new JMenu("Home");
 
         JMenuItem menuItem = new JMenuItem("IP");
         menuItem.addActionListener(new ActionListener() {
