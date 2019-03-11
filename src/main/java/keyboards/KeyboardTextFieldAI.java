@@ -4,6 +4,7 @@ import DEM.JME;
 import DEM.Main;
 import audio.Audio;
 import enums.Errors;
+import jdk.nashorn.internal.scripts.JO;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
@@ -148,6 +149,47 @@ public class KeyboardTextFieldAI implements KeyListener {
 				}else if(args.toLowerCase().contains("cl")) {
 					setConvert(floor / 100, "L");
 				}
+			}else if(args.toLowerCase().contains("sub2pewdiepie")) {
+				String[] songs = {"bitch-lasagna.wav", "bitch-lasagna-v1.2.wav"};
+				Random random = new Random();
+				String result = songs[random.nextInt(songs.length)];
+
+				Audio.playSound(result);
+			}else if(args.toLowerCase().contains("stop")) {
+				Audio.getClip().stop();
+			}else if(args.toLowerCase().contains(prefix + "feets")) {
+				String numbers = args.replace(prefix + "feets", "").replace(" ", "");
+				int calories = Integer.parseInt(numbers) / 20;
+
+				int[] floors = {
+								Math.round(calories / 2),
+								Math.round(calories / 163),
+								Math.round(calories / 479),
+								Math.round(calories / 320),
+								Math.round(calories / 73),
+								Math.round(calories / 30)
+							   };
+
+				String[] answersCalories = {
+											"You have lost " + calories + " calories"
+										   };
+
+				String[] answersFloors = {
+						   				  "Wich equals " + floors[0] + " cup(s) of tea",
+										  "Wich equals " + floors[1] + " beer(s)",
+										  "Wich equals " + floors[2] + " hamburger(s)",
+									      "Wich equals " + floors[3] + " hot dog(s)",
+										  "Wich equals " + floors[4] + " apple(s)",
+						  				  "Wich equals " + floors[5] + " carrot(s)"
+										 };
+
+				Random random = new Random();
+
+				String randomAnswersCalories = answersCalories[random.nextInt(answersCalories.length)];
+				String randomAnswersFloors = answersFloors[random.nextInt(answersFloors.length)];
+
+				JOptionPane successFloor = new JOptionPane();
+				successFloor.showMessageDialog(null, randomAnswersCalories + " | " + randomAnswersFloors, "Success", JOptionPane.PLAIN_MESSAGE);
 			}else if(args.toLowerCase().contains(prefix + "degrees")) {
 				setFrameFarenheit();
 			}else if(args.toLowerCase().contains(prefix + "calc")) {

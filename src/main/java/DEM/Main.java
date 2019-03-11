@@ -31,7 +31,7 @@ public class Main {
     public static JTextField search = new JTextField();
     public static JFrame frame = new JFrame();
 
-    public static String version = "BETA 1.2";
+    public static String version = "ALPHA 1.2";
 
     public static void main(String[] args) {
         openMenu();

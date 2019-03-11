@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8074529-5485-48fe-9f1d-acf84410d437" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/earth.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jupiter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mercure.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/neptune.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/saturn.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sun.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/uranus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/venus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bitch-lasagna-v1.2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bitch-lasagna.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
@@ -19,53 +12,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/JME.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/JME.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/Main$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/DEM/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DEM/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/actionListeners/radioBinaryText.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/actionListeners/radioBinaryText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/actionListeners/radioTextBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/actionListeners/radioTextBinary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/actionListeners/radioTextMorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/actionListeners/radioTextMorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/enums/Errors.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/enums/Errors.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldAI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldBinary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldMorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/keyboards/KeyboardTextFieldMorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/DEM-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/xyz.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/dem_project_jar/dem.project.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/dem_project_jar/dem.project.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/JME.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/JME.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/Main$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/Main$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/Main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/Main$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/Main$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/Main$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/Main$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/Main$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/Main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/Main$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/DEM/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/DEM/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/actionListeners/radioBinaryText.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/actionListeners/radioBinaryText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/actionListeners/radioTextBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/actionListeners/radioTextBinary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/actionListeners/radioTextMorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/actionListeners/radioTextMorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/enums/Errors.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/enums/Errors.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$5.class" afterDir="false" />
@@ -74,19 +24,8 @@
       <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldAI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldBinary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldMorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/keyboards/KeyboardTextFieldMorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/xyz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DEM/JME.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DEM/JME.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DEM/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DEM/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/actionListeners/radioBinaryText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actionListeners/radioBinaryText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/actionListeners/radioTextBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actionListeners/radioTextBinary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/actionListeners/radioTextMorse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actionListeners/radioTextMorse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/enums/Errors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/Errors.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldBinary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldMorse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldMorse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xyz.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -152,26 +91,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DEM/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4710">
-              <caret line="345" column="35" selection-start-line="345" selection-start-column="35" selection-end-line="345" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldAI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7185">
-              <caret line="511" selection-start-line="511" selection-end-line="511" />
+            <state relative-caret-position="150">
+              <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldAI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="463">
+              <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+              <folding>
+                <element signature="e#4424#4425#0" expanded="true" />
+                <element signature="e#4450#4451#0" expanded="true" />
+                <element signature="e#14619#14620#0" expanded="true" />
+                <element signature="e#14646#14647#0" expanded="true" />
+                <element signature="e#17931#17932#0" expanded="true" />
+                <element signature="e#17995#17996#0" expanded="true" />
+                <element signature="e#18626#18627#0" expanded="true" />
+                <element signature="e#18692#18693#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/enums/Errors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -179,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DEM/JME.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
+            <state relative-caret-position="697">
               <caret line="98" column="85" selection-start-line="98" selection-start-column="85" selection-end-line="98" selection-end-column="85" />
             </state>
           </provider>
@@ -212,12 +161,12 @@
         <option value="$PROJECT_DIR$/src/main/java/DEM/test.java" />
         <option value="$PROJECT_DIR$/src/main/java/DEM/JME.java" />
         <option value="$PROJECT_DIR$/src/main/java/enums/Errors.java" />
-        <option value="$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldAI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DEM/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldBinary.java" />
         <option value="$PROJECT_DIR$/src/main/java/actionListeners/radioTextBinary.java" />
         <option value="$PROJECT_DIR$/src/main/java/actionListeners/radioBinaryText.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/DEM/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldAI.java" />
       </list>
     </option>
   </component>
@@ -232,6 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -309,7 +259,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,18 +272,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/audio" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="DEM" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$/src/main/java/audio" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DEM" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/audio" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -471,11 +420,13 @@
       <workItem from="1552059172852" duration="8586000" />
       <workItem from="1552086164463" duration="2156000" />
       <workItem from="1552125681932" duration="1462000" />
+      <workItem from="1552154148854" duration="51000" />
+      <workItem from="1552314498411" duration="2556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51483000" />
+    <option name="totallyTimeSpent" value="54090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -488,8 +439,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31576145" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3221512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -601,13 +553,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/mars.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enums/Errors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="80" lean-forward="true" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldBinary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -650,31 +595,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DEM/Main.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4710">
-          <caret line="345" column="35" selection-start-line="345" selection-start-column="35" selection-end-line="345" selection-end-column="35" />
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldAI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/DEM/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7185">
-          <caret line="511" selection-start-line="511" selection-end-line="511" />
+        <state relative-caret-position="150">
+          <caret line="33" column="47" lean-forward="true" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DEM/JME.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
+        <state relative-caret-position="697">
           <caret line="98" column="85" selection-start-line="98" selection-start-column="85" selection-end-line="98" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/enums/Errors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="300">
+          <caret line="24" column="80" selection-start-line="24" selection-start-column="80" selection-end-line="24" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/keyboards/KeyboardTextFieldAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+          <folding>
+            <element signature="e#4424#4425#0" expanded="true" />
+            <element signature="e#4450#4451#0" expanded="true" />
+            <element signature="e#14619#14620#0" expanded="true" />
+            <element signature="e#14646#14647#0" expanded="true" />
+            <element signature="e#17931#17932#0" expanded="true" />
+            <element signature="e#17995#17996#0" expanded="true" />
+            <element signature="e#18626#18627#0" expanded="true" />
+            <element signature="e#18692#18693#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
